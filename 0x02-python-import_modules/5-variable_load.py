@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-__import__("5-variable_load")
+from variable_load_5 import a
+if __name__ == '__main__':
+    print(a)

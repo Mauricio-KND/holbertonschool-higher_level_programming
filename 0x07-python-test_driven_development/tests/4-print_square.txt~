@@ -1,0 +1,10 @@
+=============================
+How to Use 4-print_square.txt
+=============================
+This library contains test cases for the say_my_name() function.
+
+>>> say_my_name = __import__("4-print_square").print_square
+
+Test Cases
+==========
+

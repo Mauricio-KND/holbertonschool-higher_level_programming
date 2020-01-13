@@ -1,0 +1,41 @@
+============================
+How to Use 3-say_my_name.txt
+============================
+This library contains test cases for the say_my_name() function.
+
+>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+Test Cases
+==========
+>>> say_my_name("Mauricio", "Drada")
+My name is Mauricio Drada
+
+>>> say_my_name("Mauricio", "")
+My name is Mauricio 
+
+>>> say_my_name("", "Drada")
+My name is  Drada
+
+>>> say_my_name(" ", " ")
+My name is    
+
+>>> say_my_name('M', 'D')
+My name is M D
+
+>>> say_my_name("Mauricio", 'D')
+My name is Mauricio D
+
+>>> say_my_name('D', "Mauricio")
+My name is D Mauricio
+
+>>> say_my_name("Mauricio", 39)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name(39, "Mauricio")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name("Mauricio", ['M', 'D'])
+Traceback (most recent call last):
+TypeError: last_name must be a string

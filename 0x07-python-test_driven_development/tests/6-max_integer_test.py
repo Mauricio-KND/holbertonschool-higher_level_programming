@@ -45,5 +45,9 @@ class TestMaxInteger(unittest.TestCase):
     def test_max_integer_(self):
         self.assertEqual(max_integer([]), None)
 
+    def test_positives(self):
+        test_list = [4, 2, 3, 1]
+        self.assertEqual(max_integer(test_list), 4)
+
 if __name__ == '__main__':
     unittest.main()

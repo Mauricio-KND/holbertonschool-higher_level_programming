@@ -43,3 +43,11 @@ Traceback (most recent call last):
 SyntaxError: invalid syntax
 
 >>> matrix = [[1, 2, "Mauricio"], [3, 4, 5]]
+
+>>> matrix = [[1, 2, 3], ["KND", 4, 5]]
+
+>>> matrix = []
+
+>>> matrix_divided(matrix, 6)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats

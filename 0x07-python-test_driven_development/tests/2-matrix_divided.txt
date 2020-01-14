@@ -41,3 +41,5 @@ TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' an
 >>> matrix_divided(6BKND)
 Traceback (most recent call last):
 SyntaxError: invalid syntax
+
+>>> matrix = [[1, 2, "Mauricio"], [3, 4, 5]]

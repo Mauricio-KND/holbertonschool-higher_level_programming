@@ -3,6 +3,7 @@
 Module that defines an empty class.
 """
 
+
 class Rectangle:
     """
     Empty class Rectangle.

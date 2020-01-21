@@ -7,6 +7,15 @@ This library contains test cases for the print_sorted() function.
 
 Test Cases
 ==========
+     >>> my_list = MyList()
+
+     >>> my_list.append(1)
+     >>> my_list.append(1)
+     >>> my_list.append(1)
+     >>> my_list.append(1)
+
+     >>> my_list.print_sorted()
+     [1, 1, 1, 1]
 
      >>> my_list = MyList()
 
@@ -46,4 +55,3 @@ Test Cases
      [1]
      >>> my_list.print_sorted()
      [1]
-

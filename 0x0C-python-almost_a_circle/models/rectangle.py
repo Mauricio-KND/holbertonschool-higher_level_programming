@@ -87,3 +87,9 @@ class Rectangle(Base):
         """Returns [Rectangle] (<id>) <x>/<y> - <width>/<height>."""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.x, self.y, self.width, self.height)
+    
+    def update(self, *args, **kwargs):
+        """Update class Rectangle by adding a public method that assigns argument to each attribute."""
+        atts = ["id", "width", "height", "x", "y"]
+        [setattr(self, a, b) for a, b in zip(atts, args)]
+        [setattr(self, a, b) for a, b in kwargs.items()]

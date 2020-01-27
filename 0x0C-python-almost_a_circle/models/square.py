@@ -31,5 +31,7 @@ class Square(Rectangle):
     def update(self, *args, **kwargs):
         """Update the class Square by adding a public method."""
         atts = ["id", "size", "x", "y"]
-        [setattr(self, a, b) for a, b in zip(atts, args)]
-        [setattr(self, a, b) for a, b in kwargs.items()]
+        if len(args) > 0:
+            [setattr(self, a, b) for a, b in zip(atts, args)]
+        else:
+            [setattr(self, a, b) for a, b in kwargs.items()]

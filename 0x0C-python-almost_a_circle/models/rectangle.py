@@ -7,7 +7,6 @@ from models.base import Base
 class Rectangle(Base):
     """Rectangle Class inherits from Base."""
 
-
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initializing the class."""
         super().__init__(id)
@@ -15,7 +14,7 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-        
+
     @property
     def width(self):
         """Get the widht."""

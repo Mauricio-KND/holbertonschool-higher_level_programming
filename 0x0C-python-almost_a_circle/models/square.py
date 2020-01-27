@@ -27,3 +27,9 @@ class Square(Rectangle):
         """ Set size. """
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """Update the class Square by adding a public method."""
+        atts = ["id", "size", "x", "y"]
+        [setattr(self, a, b) for a, b in zip(atts, args)]
+        [setattr(self, a, b) for a, b in kwargs.items()]

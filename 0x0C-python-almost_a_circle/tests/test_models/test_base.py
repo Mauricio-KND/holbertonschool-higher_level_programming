@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Unittest for class Base
-"""
+"""Unittest for class Base."""
 import unittest
 import os
 from models.base import Base
@@ -9,18 +8,15 @@ from models.square import Square
 
 
 class TestBase(unittest.TestCase):
-    """Testing Base
-    """
+    """Test for Base."""
 
     def tearDown(self):
-        """Tears down obj count
-        """
+        """Tear down obj count."""
         Base._Base__nb_objects = 0
         self.assertEqual(Base._Base__nb_objects, 0)
 
     def test_instance(self):
-        """Test instantiation
-        """
+        """Test instantiation."""
 
         o1 = Base()
         o2 = Base(9)
@@ -40,9 +36,7 @@ class TestBase(unittest.TestCase):
         self.assertEqual(Base._Base__nb_objects, 2)
 
     def test_create(self):
-        """Testing create()
-        """
-
+        """Testing create() function."""
         o3_1 = {'id': 1, 'width': 1, 'height': 2, 'x': 2, 'y': 2}
         r3_1 = Rectangle.create(**o3_1)
         self.assertEqual(r3_1.__str__(), '[Rectangle] (1) 2/2 - 1/2')
@@ -58,9 +52,7 @@ class TestBase(unittest.TestCase):
             s3_2 = Square.create(**o3_3)
 
     def test_save_to_file(self):
-        """Testing save_to_file()
-        """
-
+        """Testing save_to_file() function."""
         o4_1 = Rectangle(10, 7, 2, 8)
         o4_2 = Rectangle(2, 4)
         o4_3 = Square(10, 7, 2)
@@ -73,9 +65,7 @@ class TestBase(unittest.TestCase):
         self.assertTrue(os.path.isfile('Square.json'))
 
     def test_load_from_file(self):
-        """Testing load_from_file()
-        """
-
+        """Testing load_from_file() function."""
         o5_1 = Rectangle(10, 7, 2, 8)
         o5_2 = Rectangle(2, 4)
         o5_3 = Square(10, 7, 2)

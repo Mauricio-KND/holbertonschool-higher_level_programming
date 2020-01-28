@@ -17,7 +17,6 @@ class TestBase(unittest.TestCase):
 
     def test_instance(self):
         """Test for instantiation."""
-
         o1 = Base()
         o2 = Base(9)
         o3 = Base(9.5)

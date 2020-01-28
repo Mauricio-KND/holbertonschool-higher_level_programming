@@ -2,6 +2,8 @@
 """Defining Base Class."""
 
 import json
+import csv
+
 
 
 class Base:
@@ -47,3 +49,15 @@ class Base:
         test = cls(1, 1) if cls.__name__ == "Rectangle" else cls(1)
         test.update(**dictionary)
         return test
+
+    @classmethod
+    def load_from_file(cls):
+        """Returns a list of instances."""
+        try:
+            with open(cls.__name__ + ".json", "r") as f:
+                pass
+        except FileNotFoundError:
+            return []
+        with open(cls.__name__ + ".json", "r") as f:
+            ld = cls.from_json_string(f.read())
+            return [cls.create(**d) for d in ld]

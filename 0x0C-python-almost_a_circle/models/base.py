@@ -33,3 +33,10 @@ class Base:
             jstr = cls.to_json_string([o.to_dictionary() for o in list_objs])
         with open(cls.__name__ + ".json", "w") as f:
             f.write(jstr)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Returns the list of the JSON string representation."""
+        if json_string is None or "":
+            return []
+        return json.loads(json_string)

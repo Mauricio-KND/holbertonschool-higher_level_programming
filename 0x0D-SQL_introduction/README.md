@@ -76,7 +76,7 @@ $`
 Connect to your MySQL server:
 
 `$ mysql -hlocalhost -uroot -p
-Password: 
+Password:
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 42
 Server version: 5.7.8-rc MySQL Community Server (GPL)
@@ -103,7 +103,7 @@ If you have some issues to upgrade to 5.7, don’t hesitate to cleanup your serv
 MySQL Community Server 5.7.8-rc is started
 $
 $ cat 0-list_databases.sql | mysql -uroot -p my_database
-Enter password: 
+Enter password:
 Database
 information_schema
 mysql
@@ -111,4 +111,4 @@ performance_schema
 sys
 $`
 
-In the container, credentials are root/root
+In the container, credentials are `root/root`

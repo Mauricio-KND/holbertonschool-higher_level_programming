@@ -110,4 +110,5 @@ mysql
 performance_schema
 sys
 $`
+
 In the container, credentials are root/root

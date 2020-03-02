@@ -100,7 +100,7 @@ If you have some issues to upgrade to 5.7, don’t hesitate to cleanup your serv
 *In the container, you should start MySQL before playing with it:
 
 `$ service mysql start
- * MySQL Community Server 5.7.8-rc is started
+MySQL Community Server 5.7.8-rc is started
 $
 $ cat 0-list_databases.sql | mysql -uroot -p my_database
 Enter password: 

@@ -1,3 +1,3 @@
---Lists all databases of your MySQL server.
---SHOW DATABASES statement, lists the databases on the MySQL server host.
-SHOW SECHEMAS;
+--Lists all databases of a MySQL server.
+--SHOW DATABASES statement, lists the databases on a MySQL server host.
+SHOW DATABASES;

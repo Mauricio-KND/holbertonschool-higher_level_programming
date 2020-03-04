@@ -1,7 +1,7 @@
 -- Creates the database hbtn_0d_usa and the table cities.
--- CREATE DATABASE creates a database with the given name.
+-- CREATE DATABASE statement creates a database with the given name.
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
--- CREATE DATABASE creates a database with the given name.
+-- CREATE TABLE statement creates a table with the given name.
 CREATE TABLE IF NOT EXISTS hbtn_0d_usa.cities (
     -- The UNIQUE constraint ensures that all values in a column are different.
     -- Primary key for a table represents the column/set of columns used in most vital queries.

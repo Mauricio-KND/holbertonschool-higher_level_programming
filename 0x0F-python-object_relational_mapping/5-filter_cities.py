@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-List all cities of a state
+Takes in the name of a state as an argument and lists all cities of that state.
 """
 import sys
 import MySQLdb

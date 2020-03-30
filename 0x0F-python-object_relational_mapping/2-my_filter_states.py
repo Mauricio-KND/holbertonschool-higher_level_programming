@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Takes in an argument and displays all values in the states table of hbtn_0e_0_usa.
+Takes in an argument and displays all values in the states table.
 """
 import sys
 import MySQLdb
@@ -17,4 +17,4 @@ if __name__ == '__main__':
     states = cur.fetchall()
 
     for state in states:
-        print(state) 
+        print(state)

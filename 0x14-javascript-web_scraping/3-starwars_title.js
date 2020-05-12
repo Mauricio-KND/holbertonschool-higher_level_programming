@@ -1,7 +1,16 @@
 #!/usr/bin/node
 
 const request = require('request');
-request(`https://swapi-api.hbtn.io/api/films/${process.argv[2]}`, function (error, response, body) {
-  error && console.log(error);
-  console.log(JSON.parse(body).title);
+const movieID = process.argv[2];
+const url = 'https://swapi-api.hbtn.io/api/films/' + movieID;
+request(url, function (error, response, body) {
+  if (error) {
+    console.log(error);
+  } else {
+    if (JSON.parse(body).detail === 'Not found') {
+      console.log(JSON.parse(body).detail);
+    } else {
+      console.log(JSON.parse(body).title);
+    }
+  }
 });
